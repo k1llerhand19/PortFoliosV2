@@ -1,0 +1,514 @@
+{% extends 'base.html.twig' %}
+{% block title %}Portfolio Nathan Corberan{% endblock %}
+{% block body %}
+
+    <section id="a-propos" class="about">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title">
+                <h2>À propos</h2>
+                <p>
+                    Je suis Nathan Corberan, âgé de 19 ans et étudiant de le domaine de développer, où je développe mes compétences 
+                    en développement. J'effectue une formation en alternance à la au Lycée Eugene Jamot en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers), 
+                    où je travaille chez Polytech pour continuer à développer mes compétences techniques en développer. Passionné par l'informatique, rigoureux et ponctuel, je suis extrêmement motivé pour développer 
+                    constamment mes compétences et évoluer professionnellement.
+                </p>
+            </div>
+            <div class="row" styles="justify-content: center">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <img src="{{asset('assets/images/costume.jpg') }}" class="img-fluid rounded" alt="" width="500px" height="200px">
+                </div>
+                <div class="col-lg-4 pt-4 pt-lg-0 content">
+                    <div class="row">
+                        <div class="col-lg-12 info">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                                    </svg>
+                                    <strong>Naissance :</strong><span> 11 Mars 2004 </span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                                    </svg>
+                                    <strong>Âge :</strong> <span>20 ans</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                                    </svg>
+                                    <strong> Mail:</strong><a href="mailto:nathan.corberan19300@gmail.com" id="lien"> nathan.corberan19300@gmail.com</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                                    </svg>
+                                    <strong>Ville :</strong> <span>Egletons</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" >
+                                    </svg>
+                                    <strong>Permis :</strong> <span>Permis B et véhicule personnel</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="competences" class="competences section-bg">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Compétences</h2>
+            </div>
+            <div class="row competences-content" id="table"> 
+                <div class="col-lg-6">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="align-middle text-center">Réseau</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">DNS</td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">DHCP</td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">GLPI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-responsive">
+                        <table class="table table-bordered test">
+                            <thead>
+                            <tr>
+                                <th class="align-middle text-center" colspan="2">Certification</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Certification RootMe</td>
+                                    <td class="text-nowrap">Score : 680</td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Certification Cisco</td>
+                                    <td class="text-nowrap">
+                                        <a href="{{asset('assets/Certif/Certif_Cisco') }}.pdf" target="_blank">Certification Cybersecurité</a>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Certification Pix (score:447)</td>
+                                    <td class="text-nowrap">
+                                        <a href="{{asset('assets/Certif/Certif_Pix') }}.pdf" target="_blank">Certification Pix</a>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Certification Pix (score:331)</td>
+                                    <td class="text-nowrap">
+                                        <a href="{{asset('assets/Certif/Certif_Pix2') }}.pdf" target="_blank">Certification Pix 2</a>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Certification Pix (score:213)</td>
+                                    <td class="text-nowrap">
+                                        <a href="{{asset('assets/Certif/Certif_Pix_3') }}.pdf" target="_blank">Certification Pix 3</a>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Certification Unity</td>
+                                    <td class="text-nowrap">
+                                        <a href="{{asset('assets/Certif/Certif_Unity') }}.pdf" target="_blank">Certification Unity</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="table-responsive">
+                        <table class="table table-bordered test">
+                            <thead>
+                            <tr>
+                                <th class="align-middle text-center" colspan="2">Développement</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle text-center">
+                                    <th class="text-nowrap">Langage</th>
+                                    <th class="text-nowrap">Framework</th>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">HTML</td>
+                                    <td class="text-nowrap">
+                                        <span class="badge text-bg-danger">N/A</span>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">CSS</td>
+                                    <td class="text-nowrap">Bootstrap</td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Javascript</td>
+                                    <td class="text-nowrap"><span class="badge text-bg-danger">N/A</span></td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">PHP</td>
+                                    <td class="text-nowrap">Symfony/Laravel</td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">SQL</td>
+                                    <td class="text-nowrap"><span class="badge text-bg-danger">N/A</span></td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">NodeJS</td>
+                                    <td class="text-nowrap"><span class="badge text-bg-danger">N/A</span></td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">C#</td>
+                                    <td class="text-nowrap">.NET Framework</td>
+                                </tr>
+                                <tr class="align-middle text-center">
+                                    <td class="text-nowrap">Python</td>
+                                    <td class="text-nowrap"><span class="badge text-bg-danger">N/A</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <section id="cv" class="resume">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Formation &amp; Expérience</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Formation</h3>
+                    <div class="resume-item">
+                        <h4>BTS SIO</h4>
+                        <h5>Septembre 2022 - Aujourd'hui</h5>
+                        <p><em>Lycée Eugene Jamot, Aubusson, France</em></p>
+                        <span><p style="text-align: justify;">BTS Services Informatiques aux Organisations option solutions logicielles et applications métiers</p>
+                            <ul>
+                                <li>Concevoir une solution logicielle</li>
+                                <li>Cybersécurité des services informatiques</li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>BAC STI2D</h4>
+                        <h5>Septembre 2020 - Juin 2022</h5>
+                        <p><em>Lycée Pierre Carminot, Egletons, France</em></p>
+                        <span><p>BAC Technologique Sciences et Technologies de l'Industrie et du Développement Durable option SIN (Système d'Information et Numérique)</p></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Expérience professionnelle</h3>
+                    <div class="resume-item">
+                        <h4>Alternant Informatique</h4>
+                        <h5>Septembre 2023 - Aujourd'hui</h5>
+                        <p><em>Polytech, Eyrein, France</em></p>
+                        <span>
+                            <ul>
+                                <li>Travailler en mode projet</li>
+                                <li>Création d'une application en C# <strong>Rédaction de Fiches Techniques</strong></li>
+                                <li>Création d'un <strong>labyrinthe</strong></li>
+                                <li>Création d'une application permettant de communiquer en <strong>TCP</strong></li>
+                                <li>Support avec les utilisateurs</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Stagiaire Informatique</h4>
+                        <h5>Février 2021</h5>
+                        <p><em>Néon-Info, Chateauroux, France</em></p>
+                        <span>
+                            <ul>
+                                <li>Installation du Framework: <a href="https://symfony.com/" target="_blank" rel="noopener"><strong>Symfony</strong></a></li>
+                                <li>Création d'un site web</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="projets section-bg">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Projets</h2>
+                <p>J'ai travaillé sur plusieurs projets, chacun étant unique et présentant des défis passionnants. Certains projets nécessitent une compréhension approfondie des besoins des utilisateurs finaux ainsi que des processus métiers afin de fournir des solutions qui répondent à leurs attentes. Ces projets m'ont permis d'acquérir de nouvelles compétences et de développer mes connaissances techniques en utilisant diverses technologies. Je trouve chaque projet stimulant et enrichissant, et cela m'encourage à poursuivre ma passion pour l'informatique. En termes simples, je suis passionné par le travail sur des projets nouveaux et passionnants qui me permettront de repousser mes limites.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Tous</li>
+                        <li data-filter="filter-e5">Epruve E5</li>
+                        <li data-filter="filter-web">Web</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 896px;">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-e5">
+                    <div class="portfolio-wrap">
+                        <div class="flip-card-container" style="--hue: 220">
+                            <div class="flip-card filter-web">
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="{{asset('assets/Images/Image_GLPI.gif') }}" alt="GLPI">
+                                        <figcaption>GLPI</figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li>Detail 1</li>
+                                        <li>Detail 2</li>
+                                        <li>Detail 3</li>
+                                        <li>Detail 4</li>
+                                        <li>Detail 5</li>
+                                    </ul>
+                                </div>
+                                <div class="card-back">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="{{asset('assets/Images/Image_GLPI2.gif') }}" id="img_GLPI" alt="Brohm Lake">
+                                    </figure>
+                                    <button id="open-popup1">Book</button>
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal')">&times;</span>
+                            <h2>Booking Modal</h2>
+                            <p>C'est ici que votre formulaire de réservation ou d'autres détails peuvent être ajoutés.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <div class="flip-card-container " style="--hue: 170">
+                            <div class="flip-card filter-web">
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="{{asset('assets/Images/LogoRappelTout3.png') }}" alt="RappelTout">
+                                        <figcaption>RappelTout</figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li>Detail 1</li>
+                                        <li>Detail 2</li>
+                                        <li>Detail 3</li>
+                                        <li>Detail 4</li>
+                                        <li>Detail 5</li>
+                                    </ul>
+                                </div>
+                                <div class="card-back">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="{{asset('assets/Images/LogoRappelTout3.png') }}" alt="RappelTout">
+                                    </figure>
+                                    <button id="open-popup2">Le Site</button>
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <div class="flip-card-container " style="--hue: 350">
+                            <div class="flip-card filter-web">
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                            <img src="{{asset('assets/Images/LogoHEC2.png') }}" alt="HEC">
+                                        <figcaption>HEC</figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li>Detail 1</li>
+                                        <li>Detail 2</li>
+                                        <li>Detail 3</li>
+                                        <li>Detail 4</li>
+                                        <li>Detail 5</li>
+                                    </ul>
+                                </div>
+                                <div class="card-back">
+                                    <!-- only if the image is necessary -->
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                            <img src="{{asset('assets/Images/LogoHEC2.png') }}" alt="HEC">
+                                    </figure>
+                                    <button id="open-popup3">Le Site</button>
+                                    <!-- can add svg here and remove these eight spans -->
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-e5">
+                    <div class="portfolio-wrap">
+                        <div class="flip-card-container" style="--hue: 100">
+                            <div class="flip-card filter-web">
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="{{asset('assets/Images/LogoFT.png') }}" alt="Fiches Techniques">
+                                        <figcaption>Fiches Techniques</figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li>Detail 1</li>
+                                        <li>Detail 2</li>
+                                        <li>Detail 3</li>
+                                        <li>Detail 4</li>
+                                        <li>Detail 5</li>
+                                    </ul>
+                                </div>
+                                <div class="card-back">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="{{asset('assets/Images/LogoFT.png') }}" id="img_GLPI" alt="Fiches Techniques">
+                                    </figure>
+                                    <button id="open-popup4">Book</button>
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                            <h2>Booking Modal</h2>
+                            <p>C'est ici que votre formulaire de réservation ou d'autres détails peuvent être ajoutés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+
+        // Get the button that opens the modal
+        var btn4 = document.getElementById("open-popup4");
+        var btn3 = document.getElementById("open-popup3");
+        var btn2 = document.getElementById("open-popup2");
+        var btn = document.getElementById("open-popup1");
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        }
+        btn4.onclick = function () {
+            modal4.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const portfolioFilters = document.getElementById("portfolio-flters");
+            const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+            portfolioFilters.addEventListener("click", function (event) {
+                if (event.target.tagName === "LI") {
+                    const filterValue = event.target.getAttribute("data-filter");
+
+                    // Ajoute la classe active au bouton cliqué et la supprime des autres
+                    portfolioFilters.querySelectorAll("li").forEach(function (li) {
+                        li.classList.remove("filter-active");
+                    });
+                    event.target.classList.add("filter-active");
+
+                    // Montre ou cache les projets en fonction du filtre
+                    portfolioItems.forEach(function (item) {
+                        if (filterValue === "*" || item.classList.contains(filterValue)) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+
+{% endblock %}
+
