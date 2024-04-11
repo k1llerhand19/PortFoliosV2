@@ -96,10 +96,12 @@ div.container
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.3);
 }
-
-
-
-
+#a-propos,
+#competences,
+#cv,
+#projets {
+  scroll-margin-top: 60px; /* Ajustez cette valeur selon vos besoins */
+}
 /*pas touche au haut*/
 section{
     margin-top: 60px;
@@ -126,8 +128,11 @@ section{
     background: #0563bb;
     bottom: 10;
     left: calc(50% - 20px);
+    
 }
-
+#Text_A_Propos, #Text_Projet{
+  text-align: justify;
+}
 .section-title p {
     display: block;
     margin-block-start: 1em;
@@ -405,56 +410,57 @@ li {
  
   
   /* button */
-  .flip-card button {
+  .flip-card-button {
     font-family: inherit;
     font-weight: bold;
     color: var(--white-1);
-  
     letter-spacing: 2px;
-  
     padding: 9px 20px;
     border: 1px solid var(--grey);
     border-radius: 1000px;
     background: transparent;
-    transition: .3s;
-  
+    transition: color 0.3s, background 0.3s, border-color 0.3s, transform 0.3s;
     cursor: pointer;
   }
   
-  .flip-card button:hover,
-  .flip-card button:focus {
+  .flip-card-button:hover,
+  .flip-card-button:focus {
     color: var(--primary);
     background: hsla(var(--hue), 25%, 10%, .2);
     border-color: currentColor;
+    transform: translate(2px);
   }
   
-  .flip-card button:active {
-    transform: translate(2px);
+  /* Animation */
+  @keyframes button-hover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .flip-card-button:hover,
+  .flip-card-button:focus {
+    animation: button-hover 0.3s infinite;
   }
   
   /* .design-container */
   .design-container {
     --tr: 90;
     --op: .5;
-  
     width: 100%;
     height: 100%;
-  
     background: transparent;
     position: absolute;
     top: 0;
     left: 0;
-  
     pointer-events: none;
   }
   
   /* .design */
   .design {
     display: block;
-  
     background: var(--grey);
     position: absolute;
-  
     opacity: var(--op);
     transition: .3s;
   }
@@ -538,6 +544,11 @@ li {
     --tr: 20;
     --op: .7;
   }
+  .flip-card-button:hover+.design-container,
+  .flip-card-button:focus+.design-container {
+    --tr: 20;
+    --op: .7;
+  }
   
   .abs-site-link {
     position: fixed;
@@ -547,7 +558,12 @@ li {
     font-size: 16px;
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   }
-  
+  #Sous-Titre_GLPI{
+    text-align: left !important;
+  }
+  .modal-toggle {
+    display: none;
+}
   .modal {
     display: none;
     position: fixed;
@@ -555,29 +571,45 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
+
     background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
+    overflow: auto; /* Ajout de la propriété overflow pour permettre le défilement si nécessaire */
 }
 
 .modal-content {
     background-color: #fff;
-    transform: translate(-50%,-25%);
-    margin-top: 25%;
-    margin-left: 50%;
+    width: 80%; /* Ajustement de la largeur */
+    max-width: 600px;
+    margin: 50px auto; /* Centrage vertical et espacement par rapport au haut */
     padding: 20px;
     border-radius: 5px;
-    max-width: 600px;
     text-align: center;
 }
 
-
-/* Style for the close button */
 .close {
     color: #aaa;
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
 
+/* Style du modal lorsqu'il est ouvert */
+.modal:target {
+  display: block;
+}
+
+#detail{
+  display: flex;
+  justify-content: center; 
+  margin-left: -50%;
+}
+#myModalRappelTout p{
+  text-align: justify;
+}
+#myModal p{
+  text-align: justify;
+}

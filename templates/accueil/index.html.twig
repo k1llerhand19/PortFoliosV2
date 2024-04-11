@@ -6,7 +6,7 @@
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="section-title">
                 <h2>À propos</h2>
-                <p>
+                <p id="Text_A_Propos">
                     Je suis Nathan Corberan, âgé de 19 ans et étudiant de le domaine de développer, où je développe mes compétences 
                     en développement. J'effectue une formation en alternance à la au Lycée Eugene Jamot en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers), 
                     où je travaille chez Polytech pour continuer à développer mes compétences techniques en développer. Passionné par l'informatique, rigoureux et ponctuel, je suis extrêmement motivé pour développer 
@@ -75,13 +75,13 @@
                             </thead>
                             <tbody>
                                 <tr class="align-middle text-center">
-                                    <td class="text-nowrap">DNS</td>
+                                    <td class="text-nowrap">Fédora</td>
                                 </tr>
                                 <tr class="align-middle text-center">
-                                    <td class="text-nowrap">DHCP</td>
+                                    <td class="text-nowrap">Debian</td>
                                 </tr>
                                 <tr class="align-middle text-center">
-                                    <td class="text-nowrap">GLPI</td>
+                                    <td class="text-nowrap">Apache</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -246,24 +246,29 @@
             </div>
         </div>
     </section>
-
     <section id="projets" class="projets section-bg">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="section-title">
                 <h2>Projets</h2>
-                <p>J'ai travaillé sur plusieurs projets, chacun étant unique et présentant des défis passionnants. Certains projets nécessitent une compréhension approfondie des besoins des utilisateurs finaux ainsi que des processus métiers afin de fournir des solutions qui répondent à leurs attentes. Ces projets m'ont permis d'acquérir de nouvelles compétences et de développer mes connaissances techniques en utilisant diverses technologies. Je trouve chaque projet stimulant et enrichissant, et cela m'encourage à poursuivre ma passion pour l'informatique. En termes simples, je suis passionné par le travail sur des projets nouveaux et passionnants qui me permettront de repousser mes limites.</p>
+                <p id="Text_Projet">J'ai travaillé sur plusieurs projets, chacun étant unique et présentant des défis passionnants. 
+                Certains projets nécessitent une compréhension approfondie des besoins des utilisateurs finaux ainsi 
+                que des processus métiers afin de fournir des solutions qui répondent à leurs attentes. Ces projets m'ont 
+                permis d'acquérir de nouvelles compétences et de développer mes connaissances techniques en utilisant diverses 
+                technologies. Je trouve chaque projet stimulant et enrichissant, et cela m'encourage à poursuivre ma passion pour 
+                l'informatique. En termes simples, je suis passionné par le travail sur des projets nouveaux et passionnants qui 
+                me permettront de repousser mes limites.</p>
             </div>
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">Tous</li>
-                        <li data-filter="filter-e5">Epruve E5</li>
-                        <li data-filter="filter-web">Web</li>
+                        <li data-filter="filter-e5">Applications Bureau</li>
+                        <li data-filter="filter-web">Applications Web</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 896px;">
-                <div class="col-lg-4 col-md-6 portfolio-item filter-e5">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
                         <div class="flip-card-container" style="--hue: 220">
                             <div class="flip-card filter-web">
@@ -273,20 +278,21 @@
                                         <img src="{{asset('assets/Images/Image_GLPI.gif') }}" alt="GLPI">
                                         <figcaption>GLPI</figcaption>
                                     </figure>
+                                    <center>
                                     <ul>
-                                        <li>Detail 1</li>
-                                        <li>Detail 2</li>
-                                        <li>Detail 3</li>
-                                        <li>Detail 4</li>
-                                        <li>Detail 5</li>
+                                        <li id="detail">VM</li>
+                                        <li id="detail">Debian</li>
+                                        <li id="detail">PHP</li>
+                                        <li id="detail">MariaDB</li>
                                     </ul>
+                                    </center>
                                 </div>
                                 <div class="card-back">
                                     <figure>
                                         <div class="img-bg"></div>
                                         <img src="{{asset('assets/Images/Image_GLPI2.gif') }}" id="img_GLPI" alt="Brohm Lake">
                                     </figure>
-                                    <button id="open-popup1">Book</button>
+                                    <a href="#myModal" class="flip-card-button">Ouvrir GLPI</a>
                                     <div class="design-container">
                                         <span class="design design--1"></span>
                                         <span class="design design--2"></span>
@@ -303,13 +309,23 @@
                     </div>
                     <div id="myModal" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal')">&times;</span>
-                            <h2>Booking Modal</h2>
-                            <p>C'est ici que votre formulaire de réservation ou d'autres détails peuvent être ajoutés.</p>
+                            <a href="#projets" class="close" id="closeModal" onclick="history.back()">&times;</a>
+                            <h1>GLPI</h1>
+                            <h3 id="Sous-Titre_GLPI">Une Gestion Informatique Simplifiée</h3>
+                            <p>
+                                Découvrez GLPI (Gestionnaire Libre de Parc Informatique) : une solution open source 
+                                qui révolutionne la gestion des services informatiques et de l'assistance.
+                            </p>
+                            <h3 id="Sous-Titre_GLPI">Description du Projet :</h3>
+                            <p>
+                               Ce projet consiste à réaliser l'installation complète de GLPI (Gestionnaire Libre de Parc Informatique) 
+                               sur une machine virtuelle fonctionnant sous Debian, 
+                               offrant ainsi une solution robuste de gestion des services informatiques et de l'assistance, 
+                               indispensable pour toute organisation désireuse d'optimiser la gestion de son parc informatique.
+                            </p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
                         <div class="flip-card-container " style="--hue: 170">
@@ -320,20 +336,22 @@
                                         <img src="{{asset('assets/Images/LogoRappelTout3.png') }}" alt="RappelTout">
                                         <figcaption>RappelTout</figcaption>
                                     </figure>
+                                    <center>
                                     <ul>
-                                        <li>Detail 1</li>
-                                        <li>Detail 2</li>
-                                        <li>Detail 3</li>
-                                        <li>Detail 4</li>
-                                        <li>Detail 5</li>
+                                        <li id="detail">Symfony</li>
+                                        <li id="detail">php</li>
+                                        <li id="detail">twig</li>
+                                        <li id="detail">CSS</li>
+                                        <li id="detail">MySQL</li>
                                     </ul>
+                                    </center>
                                 </div>
                                 <div class="card-back">
                                     <figure>
                                         <div class="img-bg"></div>
                                         <img src="{{asset('assets/Images/LogoRappelTout3.png') }}" alt="RappelTout">
                                     </figure>
-                                    <button id="open-popup2">Le Site</button>
+                                    <a href="#myModalRappelTout" class="flip-card-button">Ouvrir RappelTout</a>
                                     <div class="design-container">
                                         <span class="design design--1"></span>
                                         <span class="design design--2"></span>
@@ -348,8 +366,28 @@
                             </div>
                         </div>
                     </div>
+                    <div id="myModalRappelTout" class="modal">
+                        <div class="modal-content">
+                            <a href="#projets" class="close" id="closeModal" onclick="history.back()">&times;</a>
+                            <h1>RappelTout</h1>
+                            <h3 id = "Sous-Titre_GLPI" >Description du Cahier des chargne :</h3>
+                            <p> 
+                                Pour les besoins de la commission de sécurité, je dois veiller à ce que les extincteurs ne
+                                dépassent pas la date de péremption. C’est aussi vrai pour d’autres dispositifs, tels que la
+                                date de révision des véhicules de la Région Nouvelle Aquitaine.
+                                Pour chaque date importante, il y a un document ce lequel elle figure. Par exemple, celle de
+                                péremption des extincteurs figure sur un document dont je dispose au format PDF et que je
+                                souhaite placer sur un serveur FTP accessible par moi pendant mes heures de travail (sur le
+                                réseau local de la cité scolaire).
+                                Je souhaite avoir des rappels soit par mail, soit par SMS, ressemblant à ceci :
+                            </p>
+                            <img src="{{asset('assets/Images/RappelTout_Mail.png') }}" alt="RappelTout Mail">
+                            <h3 id = "Sous-Titre_GLPI" >MCD :</h3>
+                            <img src="{{asset('assets/Images/RappelTout_MCD.png') }}" alt="RappelTout MCD">
+                            <a href="https://rappeltout.nathan-corberan.fr/" target="_blank" class="flip-card-button">Site RappelTout</a>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
                         <div class="flip-card-container " style="--hue: 350">
@@ -360,13 +398,15 @@
                                             <img src="{{asset('assets/Images/LogoHEC2.png') }}" alt="HEC">
                                         <figcaption>HEC</figcaption>
                                     </figure>
+                                    <center>
                                     <ul>
-                                        <li>Detail 1</li>
-                                        <li>Detail 2</li>
-                                        <li>Detail 3</li>
-                                        <li>Detail 4</li>
-                                        <li>Detail 5</li>
+                                        <li id="detail">Symfony</li>
+                                        <li id="detail">php</li>
+                                        <li id="detail">twig</li>
+                                        <li id="detail">CSS</li>
+                                        <li id="detail">MySQL</li>
                                     </ul>
+                                    </center>
                                 </div>
                                 <div class="card-back">
                                     <!-- only if the image is necessary -->
@@ -374,7 +414,9 @@
                                         <div class="img-bg"></div>
                                             <img src="{{asset('assets/Images/LogoHEC2.png') }}" alt="HEC">
                                     </figure>
-                                    <button id="open-popup3">Le Site</button>
+                                    <a href="#myModalHEC" class="flip-card-button">Ouvrir HEC</a>
+
+
                                     <!-- can add svg here and remove these eight spans -->
                                     <div class="design-container">
                                         <span class="design design--1"></span>
@@ -390,6 +432,26 @@
                             </div>
                         </div>
                     </div>
+                    <div id="myModalHEC" class="modal">
+                        <div class="modal-content">
+                            <a href="#projets" class="close" id="closeModal" onclick="history.back()">&times;</a>
+                            <h1>HEC</h1>
+                            <h3 id = "Sous-Titre_GLPI" >Description du projet :</h3>
+                            <p> 
+                                Création d'un site Web pour l'Association HEC. Ce projet vise à développer une 
+                                plateforme permettant la présentation du club, la consultation des actualités, 
+                                la gestion des matchs et des entraînements pour toutes les catégories de joueurs. 
+                                De plus, il offrira la possibilité d'administrer les contenus tels que les événements 
+                                du club, les images et vidéos. Ce projet inclut l'intégration d'une base de données 
+                                pour permettre la gestion efficace des contenus. Ce projet est en cours de réalisation.
+                            </p>
+                            <h3 id = "Sous-Titre_GLPI" >MCD :</h3>
+                            <img src="{{asset('assets/Images/MCD_HEC.png') }}" alt="RappelTout MCD">
+
+                            <a href="#" target="_blank" class="flip-card-button">Ouvrir HEC</a>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-e5">
                     <div class="portfolio-wrap">
@@ -401,20 +463,21 @@
                                         <img src="{{asset('assets/Images/LogoFT.png') }}" alt="Fiches Techniques">
                                         <figcaption>Fiches Techniques</figcaption>
                                     </figure>
+                                    <center>
                                     <ul>
-                                        <li>Detail 1</li>
-                                        <li>Detail 2</li>
-                                        <li>Detail 3</li>
-                                        <li>Detail 4</li>
-                                        <li>Detail 5</li>
+                                        <li id="detail">C#</li>
+                                        <li id="detail">SQL</li>
+                                        <li id="detail">Microsoft Express</li>
                                     </ul>
+                                    </center>
                                 </div>
                                 <div class="card-back">
                                     <figure>
                                         <div class="img-bg"></div>
                                         <img src="{{asset('assets/Images/LogoFT.png') }}" id="img_GLPI" alt="Fiches Techniques">
                                     </figure>
-                                    <button id="open-popup4">Book</button>
+                                    <a href="#myModalFT" class="flip-card-button">Ouvrir FT</a>
+
                                     <div class="design-container">
                                         <span class="design design--1"></span>
                                         <span class="design design--2"></span>
@@ -429,58 +492,31 @@
                             </div>
                         </div>
                     </div>
-                    <div id="myModal4" class="modal">
+                    <div id="myModalFT" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal4')">&times;</span>
-                            <h2>Booking Modal</h2>
-                            <p>C'est ici que votre formulaire de réservation ou d'autres détails peuvent être ajoutés.</p>
+                            <a href="#projets" class="close" id="closeModal" onclick="history.back()">&times;</a>
+                            <h1>Fiches Techniques</h1>
+                            <h3 id = "Sous-Titre_GLPI" >Description du projet :</h3>
+                            <p> 
+                                Création d'une application en C# connectée à une base de données pour générer des fichiers texte 
+                                contenant toutes les données relatives à une ou plusieurs Fiches Techniques de Blocs Portes. 
+                                Ces fichiers seront utilisés pour la création de fiches techniques via InDesign. 
+                                Chaque Fiche Technique comprendra toutes les annexes, les plans des Blocs Portes et leurs 
+                                données spécifiques.
+                            </p>
+                            <p>
+                                L'application sera accessible uniquement en consultation, en création de Fiches Techniques, 
+                                d'annexes et de plans, ainsi qu'en création de plans uniquement.
+                            </p>
+                            <h3 id = "Sous-Titre_GLPI" >MCD :</h3>
+                            <img src="{{asset('assets/Images/FT.jpg') }}" alt="MCD FT">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        var modal2 = document.getElementById("myModal2");
-        var modal3 = document.getElementById("myModal3");
-        var modal4 = document.getElementById("myModal4");
-
-        // Get the button that opens the modal
-        var btn4 = document.getElementById("open-popup4");
-        var btn3 = document.getElementById("open-popup3");
-        var btn2 = document.getElementById("open-popup2");
-        var btn = document.getElementById("open-popup1");
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-        btn2.onclick = function () {
-            modal2.style.display = "block";
-        }
-        btn3.onclick = function () {
-            modal3.style.display = "block";
-        }
-        btn4.onclick = function () {
-            modal4.style.display = "block";
-        }
-        // When the user clicks on <span> (x), close the modal
-        function closeModal(modalId) {
-            var modal = document.getElementById(modalId);
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-    </script>
-
+    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const portfolioFilters = document.getElementById("portfolio-flters");
