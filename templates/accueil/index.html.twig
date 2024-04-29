@@ -1,7 +1,22 @@
 {% extends 'base.html.twig' %}
 {% block title %}Portfolio Nathan Corberan{% endblock %}
 {% block body %}
-
+    <section id="Accueil" class="about">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-12 px-0">
+                    <div class="image-container">
+                        <img src="{{asset('assets/images/Logo_Construction.png') }}" class="img-fluid rounded" alt="">
+                        <div class='console-container'>
+                            Je suis un
+                            <span id='text'></span>
+                            <div class='console-underscore' id='console'>&#95;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="a-propos" class="about">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="section-title">
@@ -9,14 +24,14 @@
                 <p id="Text_A_Propos">
                     Je suis Nathan Corberan, âgé de 19 ans et étudiant de le domaine de développer, où je développe mes compétences 
                     en développement. J'effectue une formation en alternance à la au Lycée Eugene Jamot en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers), 
-                    où je travaille chez Polytech pour continuer à développer mes compétences techniques en développer. Passionné par l'informatique, rigoureux et ponctuel, je suis extrêmement motivé pour développer 
+                    où je travaille chez Polytech pour continuer à développer mes compétences techniques en dévellopement. Passionné par l'informatique, rigoureux et ponctuel, je suis extrêmement motivé pour développer 
                     constamment mes compétences et évoluer professionnellement.
                 </p>
             </div>
             <div class="row" styles="justify-content: center">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
-                    <img src="{{asset('assets/images/costume.jpg') }}" class="img-fluid rounded" alt="" width="500px" height="200px">
+                    <img src="{{asset('assets/images/Logo_Construction.png') }}" class="img-fluid rounded" alt="" width="500px" height="200px">
                 </div>
                 <div class="col-lg-4 pt-4 pt-lg-0 content">
                     <div class="row">
@@ -38,19 +53,19 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
                                     </svg>
-                                    <strong> Mail:</strong><a href="mailto:nathan.corberan19300@gmail.com" id="lien"> nathan.corberan19300@gmail.com</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
-                                    </svg>
                                     <strong>Ville :</strong> <span>Egletons</span>
                                 </li>
                                 <li>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" >
                                     </svg>
-                                    <strong>Permis :</strong> <span>Permis B et véhicule personnel</span>
+                                    <strong>Permis :</strong> <span>Permis B/A2 et véhicules personnels</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" >
+                                    </svg>
+                                    <strong>CV :</strong> <span> <a href="{{asset('assets/PDF/Cv-Corberan1') }}.pdf" target="_blank">CV 1</a> / <a href="{{asset('assets/PDF/Cv-Corberan2') }}.pdf" target="_blank">CV 2</a></span>
                                 </li>
                             </ul>
                         </div>
@@ -509,9 +524,38 @@
                                 d'annexes et de plans, ainsi qu'en création de plans uniquement.
                             </p>
                             <h3 id = "Sous-Titre_GLPI" >MCD :</h3>
-                            <img src="{{asset('assets/Images/FT.jpg') }}" alt="MCD FT">
+                            <img src="{{asset('assets/Images/MCD_FT.png') }}" alt="MCD FT">
+                            <img src="{{asset('assets/Images/MCD_FT2.png') }}" alt="MCD FT">
+                            <img src="{{asset('assets/Images/MCD_FT3.png') }}" alt="MCD FT">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title">
+                <h2>contact</h2>
+                <div class="container">
+                    {{ form_start(form, {'attr': {'class': 'my-form'}}) }}
+                        <div class="form-group">
+                            {{ form_label(form.email, 'Adresse email', {'label_attr': {'class': 'control-label'}}) }}
+                            {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.email) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.subject, 'Sujet', {'label_attr': {'class': 'control-label'}}) }}
+                            {{ form_widget(form.subject, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.subject) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.message, 'Message', {'label_attr': {'class': 'control-label'}}) }}
+                            {{ form_widget(form.message, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.message) }}
+                        </div>
+                        <button type="submit" class="btn BtnContact btn-primary">Envoyer</button>
+                    {{ form_end(form) }}
                 </div>
             </div>
         </div>
@@ -543,6 +587,58 @@
                 }
             });
         });
+
+        // function([string1, string2],target id,[color1,color2])    
+        consoleText(['Développeur web et mobile.', 'Développeur avancé en cybersécurité.','expert en gestion de bases de données.','Entrepreneur.'], 'text', ['rgb(37, 118, 192)', 'rebeccapurple', 'lightblue','rgb(220, 53, 69)']);
+
+        function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ['#fff'];
+        var visible = true;
+        var con = document.getElementById('console');
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id)
+        target.setAttribute('style', 'color:' + colors[0])
+        window.setInterval(function() {
+
+            if (letterCount === 0 && waiting === false) {
+            waiting = true;
+            target.innerHTML = words[0].substring(0, letterCount)
+            window.setTimeout(function() {
+                var usedColor = colors.shift();
+                colors.push(usedColor);
+                var usedWord = words.shift();
+                words.push(usedWord);
+                x = 1;
+                target.setAttribute('style', 'color:' + colors[0])
+                letterCount += x;
+                waiting = false;
+            }, 1000)
+            } else if (letterCount === words[0].length + 1 && waiting === false) {
+            waiting = true;
+            window.setTimeout(function() {
+                x = -1;
+                letterCount += x;
+                waiting = false;
+            }, 1000)
+            } else if (waiting === false) {
+            target.innerHTML = words[0].substring(0, letterCount)
+            letterCount += x;
+            }
+        }, 120)
+        window.setInterval(function() {
+            if (visible === true) {
+            con.className = 'console-underscore hidden'
+            visible = false;
+
+            } else {
+            con.className = 'console-underscore'
+
+            visible = true;
+            }
+        }, 400)
+        }
     </script>
 
 

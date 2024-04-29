@@ -1,5 +1,7 @@
 #site{
     background-color: lightgray;
+    overflow-x: hidden; 
+
 }
 
 html{
@@ -612,4 +614,49 @@ li {
 }
 #myModal p{
   text-align: justify;
+}
+.image-container {
+  position: relative;
+  width: 100vw; 
+  overflow: hidden; 
+}
+
+.image-container img {
+  width: 100%; 
+  height: auto; 
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:2.5em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+.list-unstyled{
+  margin-top: 10%;
+}
+
+#contact{
+  margin-top: 250px;
+}
+
+.BtnContact{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(35, 97, 185);
 }
