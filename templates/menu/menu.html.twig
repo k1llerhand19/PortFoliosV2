@@ -1,31 +1,58 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+{% set is_mention_legale_page = app.request.attributes.get('_route') == 'app_footer' %}
+
+<nav class="navbar navbar-expand-lg fixed-top">
     <!-- Logo à gauche -->
-    <a class="navbar-brand Intitule">NC</a> <!-- Utilisation de la classe "ms-auto" pour déplacer le logo complètement à gauche -->
+    <a class="navbar-brand Intitule"><img src="{{asset('assets/images/Logo_NC.svg') }}" class="img-fluid rounded" alt=""></a> <!-- Utilisation de la classe "ms-auto" pour déplacer le logo complètement à gauche -->
     <!-- Bouton pour le menu mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
     </button>
     <!-- Les autres boutons à droite -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#Accueil">Accueil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#a-propos">À propos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#competences">Compétences</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#cv">Formation & Expérience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projets">Projets</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
+    {% if not is_mention_legale_page %}
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Accueil">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a-propos">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#competences">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cv">Formation & Expérience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projets">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    {% else %}
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_accueil') }}">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_accueil') }}">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_accueil') }}">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_accueil') }}">Formation & Expérience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_accueil') }}">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_accueil') }}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    {% endif %}
 </nav>
